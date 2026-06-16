@@ -213,6 +213,9 @@ Parin
 </div>
 
 </div>
+<audio id="music" loop>
+    <source src="happy-birthday-piano.mp3" type="audio/mpeg">
+</audio>
 
 <script>
 for(let i=0;i<35;i++){
@@ -227,6 +230,7 @@ document.body.appendChild(p);
 }
 
 function openEnvelope(){
+document.getElementById("music").play();
 const scene=document.getElementById('scene');
 scene.classList.add('open');
 
